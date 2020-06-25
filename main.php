@@ -1,11 +1,10 @@
 <?php
-    require 'vendor/autoload.php';
+require 'vendor/autoload.php';
 
-    use RunCloud\User;
-    use RunCloud\Server;
-    use RunCloud\BasicPlan;
-    use RunCloud\ProPlan;
-//use User
+use RunCloud\User;
+use RunCloud\Server;
+use RunCloud\BasicPlan;
+use RunCloud\ProPlan;
 /*
 |--------------------------------------------------------------------------
 | RunCloud Assesment
