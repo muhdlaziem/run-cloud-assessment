@@ -31,7 +31,7 @@
 
         }
         public function connectServer($server){
-            print "Action: Connecting to Server" . $server ->name . "...\n";
+            print "Action: Connecting to Server " . $server ->name . "...\n";
 
             if(!$this -> subscription){
                 print "Error => User is not Subscribe to Any Plan !\n\n";
