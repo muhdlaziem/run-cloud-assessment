@@ -1,0 +1,18 @@
+{
+    "name": "muhdlaziem/run-cloud",
+    "description": "RunCloud Assessment Test",
+    "type": "project",
+    "authors": [
+        {
+            "name": "Muhammad Laziem Shafie",
+            "email": "muhdlaziem@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "RunCloud\\": "src/"
+        }
+    },
+    "require": {
+    }
+}
