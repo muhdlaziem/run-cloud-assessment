@@ -14,24 +14,24 @@
         }
         public function showDetails(){
             print "\n";
-            print "+-----------------+------------------------\n";
-            print "|User's Name      | " . $this -> name . "\n";
-            print "+-----------------+------------------------\n";
-            print "|Current Plan     | " . $this -> subscription -> getName() . "\n";
-            print "+-----------------+------------------------\n";
-            print "|Connected Server | " ;
+            print "+-------------------+-------------------------------\n";
+            print "| User's Name       | " . $this -> name . "\n";
+            print "+-------------------+-------------------------------\n";
+            print "| Current Plan      | " . $this -> subscription -> getName() . "\n";
+            print "+-------------------+-------------------------------\n";
+            print "| Connected Servers | " ;
             $showServer ='';
             foreach ($this -> connectedServer as $server){
                 $showServer .= $server -> name . " [" . $server -> ipAddress . "], ";
             }
             $showServer = rtrim($showServer,', ');
             print $showServer;
-            print "\n+-----------------+------------------------\n";
+            print "\n+-------------------+-------------------------------\n";
             print "\n\n";
 
         }
         public function connectServer($server){
-            print "Action: Connecting to Server " . $server ->name . "...\n";
+            print "Action: Connecting to Server " . $server ->name . " ...\n";
 
             if(!$this -> subscription){
                 print "Error => User is not Subscribe to Any Plan !\n\n";
@@ -49,7 +49,7 @@
         }
 
         public function unsubscribe(){
-            print "Action: Canceling Subscription to Plan " . $this -> subscription -> getName() . "...\n\n";
+            print "Action: Cancelling Subscription to Plan " . $this -> subscription -> getName() . " ...\n\n";
             print "You have successfully unsubscribed from plan " . $this -> subscription -> getName() . ".\n";
             $this -> subscription = null;
             $this -> subscription = array();
